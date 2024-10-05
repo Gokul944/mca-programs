@@ -1,0 +1,132 @@
+<html>
+<head><title>Bio Data Form</title>
+</head>
+<body bgcolor=#f9e79f >
+    <h2>Bio Data Form</h2>
+  <form>
+<fieldset>
+  <legend>Personal:</legend>
+       <table id="t02" align="center">
+         <tr>
+          <td> 
+            <label id="name-label" for="name">Name: </label>
+          </td>
+          <td><input autofocus type="text" name="name" id="name" class="input-field"
+                placeholder="Enter your name" required>
+          </td>
+         </tr>
+         <tr>
+          <td>
+             <label id="fname-label" for="fname">Father's Name: </label>
+          </td>
+          <td><input autofocus type="text" name="fname" id="fname" class="input-field"
+               placeholder="Enter your father's name" required>
+          </td>
+         </tr>
+         <tr>
+          <td><label id="mname-label" for="mname">Mother's Name: </label>
+          </td>
+          <td><input autofocus type="text" name="mname" id="mname" class="input-field"
+              placeholder="Enter your mother's name" required>
+          </td>
+         </tr>
+         <tr>
+          <td><label id="email-label" for="email">Email: </label> 
+          </td>
+          <td><input type="email" name="email" id="email" class="input-field" required
+               placeholder="Enter your Email">
+          </td>
+         </tr>
+         <tr>
+          <td><label id="number-label" for="age">Age: </label>
+          </td>
+          <td><input type="number" name="age" id="number" min="1" max="125" class="input- field"
+               placeholder="Age" required></td>
+         </tr>
+         <tr>
+          <td><label id="dob-label" for="dob">D.O.B: </label>
+          </td>
+          <td><input type="date" name="dob" id="iddob" class="input-field" required> 
+          </td>
+         </tr>
+        <tr> <td><label for="department">Department: </label>
+          </td>
+          <td>
+
+              <select id="dropdown" name="department" class="dropdown">
+                <option disabled value>Select an option</option>
+                  <option value="it">IT</option>
+                  <option value="cse">CSE</option>
+                  <option value="ece">ECE</option>
+                  <option value="mech">MECH</option>
+                  <option value="civil">CIVIL</option>
+                  <option value="other">Other</option>
+              </select>
+           </td> 
+         </tr>
+     </table>
+</fieldset>
+     <table id="t03" align=center><tr><td>
+         <label for="gender">Gender: </label>
+              <ul style="list-style: none;">
+                 <li class="radio"><label><input name="radio-buttons" value="male" type="radio"
+                     class="userRatings" >Male</label></li>
+                 <li class="radio"><label><input name="radio-buttons" value="female" type="radio"
+                     class="userRatings" >Female</label></li>
+                 <li class="radio"><label><input name="radio-buttons" value="others" type="radio"
+                     class="userRatings" >Others</label></li>
+              </ul>
+        <tr>
+          <td>
+           <label for="address">Address: </label>
+          </td>
+          <td><textarea id="comments" class="input-field" style="height:50px;resize:vertical;"
+                 name="address" placeholder="Enter your address here..."></textarea> 
+          </td> 
+        </tr>
+        <tr>
+          <td><label for="pincode">Pincode: </label>
+          </td>
+          <td><input type="number" name="pincode" id="idpincode" class="input-field"
+               style="height:20px;resize:vertical;" placeholder="6 digits Number">
+          </td>
+        </tr>
+        <tr>
+          <td><label for="pincode">Phone Number: </label>
+          </td>
+          <td><input type="number" name="Phone Number" id="idphonenumber" class="input- field"
+             style="height:20px;resize:vertical;" placeholder="10 digits Number">
+          </td>
+        </tr>
+        <tr>
+          <td><label for="language">Language Known: </label>
+                <ul id="language" style="list-style: none;">
+                    <li class="checkbox"><label><input name="prefer" value="english" type="checkbox"
+                         class="userRatings">English</label></li>
+                    <li class="checkbox"><label><input name="prefer" value="tamil" type="checkbox"
+                          class="userRatings">Tamil</label></li>
+                    <li class="checkbox"><label><input name="prefer" value="hindi" type="checkbox"
+                           class="userRatings">Hindi</label></li>
+                    <li class="checkbox"><label><input name="prefer" value="malayalam" type="checkbox"
+                            class="userRatings">Malayalam</label></li>
+                    <li class="checkbox"><label><input name="prefer" value="kannada" type="checkbox"
+                              class="userRatings">Kannada</label></li>
+                    <li class="checkbox"><label><input name="prefer" value="telugu" type="checkbox"
+                              class="userRatings">Telugu</label></li>
+                    <li class="checkbox"><label><input name="prefer" value="others" type="checkbox"
+                               class="userRatings">Others</label></li>
+               </ul>
+          </td>
+       </tr>
+       <tr>
+          <td>
+             <button id="submit" type="submit">Submit</button>
+          </td>
+          <td>
+             <button id="reset" type="reset">Reset</button>
+          </td>
+       </tr>
+   </table>
+ </form>
+</body>
+</html>
