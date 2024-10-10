@@ -1,0 +1,14 @@
+list1 = []
+
+for i in range(4):
+    a = int(input("Enter an element: ")) 
+    list1.append(a)  
+
+odd_numbers = [] 
+
+
+for num in list1:
+    if num % 2 != 0:  
+        odd_numbers.append(num) 
+
+print("List after removing even numbers:", odd_numbers)
