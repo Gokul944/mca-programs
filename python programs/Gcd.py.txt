@@ -1,0 +1,5 @@
+import math
+a=int(input("Enter a number"))
+b=int(input("Enter a number"))
+c=math.gcd(a,b)
+print(f"GCD of {a} & {b} is {c}")
