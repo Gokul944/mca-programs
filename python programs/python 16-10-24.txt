@@ -1,0 +1,43 @@
+import math
+num=[];
+for i in range(3):
+    numbers =int(input("enter the numbers"))
+    num.append(numbers)
+result = sum(num)
+print(f"sum of 3 numbers {result}") 
+result =math.prod(num)
+print(f"Product of 3 numbers {result}")  
+
+
+
+
+
+
+from datetime import datetime
+current_year = datetime.now().year
+
+
+num_years = int(input("Enter the number of future years to check for leap years: "))
+
+future_leap_years = []
+
+for year in range(current_year, current_year + num_years):
+    if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
+        future_leap_years.append(year)
+print("Future leap years:")
+print(future_leap_years)
+
+
+
+
+
+
+list=[]
+for i in range(5):
+    num=int(input("Enter Integer Numbers: "))
+    list.append(num)
+list2=[]
+for i in list:
+    if i>0:
+        list2.append(i)
+print(list2)
