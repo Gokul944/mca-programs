@@ -1,0 +1,68 @@
+//3.b
+from datetime import datetime
+def leapyear(current_year,num_years):
+    future_leap_years = []
+    for year in range(current_year, current_year + num_years):
+        if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
+            future_leap_years.append(year)
+    print("Future leap years:")
+    print(future_leap_years)
+    
+current_year = datetime.now().year
+
+num_years = int(input("Enter the number of future years to check for leap years: "))
+
+
+leapyear(current_year,num_years) 
+
+
+
+
+//4.a
+lis=[]
+for i in range(4):
+    num=int(input("Enter Integer Numbers: "))
+    lis.append(num)
+list2=[i for i in lis if i>0]
+print(list2)
+
+
+//3.a
+def sum(a,b,c):
+    sm=a+b+c
+    print(sm)
+
+def pdt(a,b,c):
+    pt=a*b*c
+    print(pt)
+a=int(input("Enter value of a:"))
+b=int(input("Enter value of b:"))
+c=int(input("Enter value of c:"))
+
+sum(a,b,c)
+
+pdt(a,b,c)
+
+
+
+//4.b
+n=int(input("Enter n values: "))
+list=[i*i for i in range(n)]
+print(list)
+
+
+
+
+//4.c
+list1=['a','e','i','o','u','A','E','I','O','U']
+words=input("Enter a word")
+vowels=[char for char in words if char in list1]
+print(vowels)
+
+
+
+
+//4.d
+word=input("Enter a word")
+list1=[ord(i) for i in word]
+print(list1)
